@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="16dp">
+
+        <!-- Checklist-bro 1 -->
+        <ImageView
+            android:id="@+id/checklistBroImageView"
+            android:layout_width="364dp"
+            android:layout_height="365dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-17px"
+            android:src="@drawable/hidrotools" />
+
+        <!-- Email -->
+        <RelativeLayout
+            android:id="@+id/emailloginLayout"
+            android:layout_width="328dp"
+            android:layout_height="64dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="260dp"
+            android:background="@drawable/rounded_rectangle">
+
+            <!-- Rectangle 8 -->
+            <RelativeLayout
+                android:id="@+id/rectangle8Layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_rectangle">
+
+                <!-- Email -->
+                <EditText
+                    android:id="@+id/emailloginEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center"
+                    android:hint="Email"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/orLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginButtonLayout"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- Left Line -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#989E9D" />
+
+            <!-- OR Text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:alpha="0.4"
+                android:text="OR"
+                android:textColor="#181818"
+                android:textSize="14sp" />
+
+            <!-- Right Line -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#989E9D" />
+        </LinearLayout>
+
+        <!-- Button Register -->
+        <RelativeLayout
+            android:id="@+id/registerButtonLayout"
+            android:layout_width="328dp"
+            android:layout_height="53dp"
+            android:layout_below="@id/orLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_rectangle">
+
+            <!-- Rectangle 10 -->
+            <RelativeLayout
+                android:id="@+id/rectangle10Layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_button_background">
+
+                <!-- Register -->
+                <TextView
+                    android:id="@+id/registerTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="17dp"
+                    android:text="Register"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!-- Login Title -->
+        <RelativeLayout
+            android:id="@+id/loginButtonLayout"
+            android:layout_width="328dp"
+            android:layout_height="53dp"
+            android:layout_below="@id/passwordLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_button_background">
+
+            <!-- Login -->
+            <TextView
+                android:id="@+id/loginTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="12dp"
+                android:text="Login"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <!-- Password -->
+        <RelativeLayout
+            android:id="@+id/passwordLayout"
+            android:layout_width="328dp"
+            android:layout_height="64dp"
+            android:layout_below="@id/emailloginLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_rectangle">
+
+            <!-- Rectangle 8 -->
+            <RelativeLayout
+                android:id="@+id/rectangle8PasswordLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_rectangle">
+
+                <!-- Password EditText -->
+                <EditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/passwordToggle"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="48dp"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <!-- Eye Icon -->
+                <ImageView
+                    android:id="@+id/passwordToggle"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:clickable="true"
+                    android:contentDescription="Show/Hide Password"
+                    android:focusable="true"
+                    android:padding="9dp"
+                    android:src="@drawable/hide" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
